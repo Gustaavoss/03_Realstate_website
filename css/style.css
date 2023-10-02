@@ -1,0 +1,218 @@
+/*padrao*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body,html{
+	height: 100%;
+}
+.clear{
+	clear: both;
+}
+
+.conteiner{
+	width: 100%;
+	max-width: 1200px ;
+	margin: 0 auto;
+}
+
+/*inicio da estilizacao*/
+header{
+	background-color: #D6D6D6;
+	padding: 10px 2% 30px 2%;
+}
+
+.logo1{
+	width: 100px;
+	height: 90px;
+	float: left;
+	background-image: url(../images/logo1.png);
+	background-size: 100% 100%;
+	
+}
+.logo2{
+	width: 120px;
+	height: 90px;
+	float: right;
+	background-image: url(../images/logo2.jpeg);
+	background-size: 100% 100%;
+}
+
+/*estilizacao responsiva header*/
+@media screen and (max-width: 510px){
+	header{
+		text-align: center;
+	}
+
+	.logo1, .logo2{
+		float: none;
+		display: inline-block;
+		margin-top: 10px
+	}
+}
+
+/*estilizacao section-form*/
+section.section-form-cover{
+	width: 100%;
+	padding: 0 2%;
+}
+.conteiner-cover{
+	position: relative;
+	background-image: url(../images/cover-form.jpeg);
+	height: 620px;
+	background-size: cover;
+	background-position: center;
+}
+.conteiner-form{
+	position: absolute;
+	right: 30px;
+	top: -5%;
+	width: 400px;
+	height: 105%;
+	box-shadow: 1px 2px 1px 1px;
+	background-color: white;
+}
+
+.conteiner-form h2{
+	background-color: rgb(220, 220, 220);
+	padding: 20px 17px;
+	color: black;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.conteiner-form form{
+	margin-top: 8px;
+	padding: 15px;
+}
+.conteiner-form form p{
+	font-size: 15px;
+	color: #525252; 
+}
+.conteiner-form form input[type=text]{
+	width: 100%;
+	border: 1px solid #ccc;
+	height: 45px;
+	line-height: 45px;
+	padding-left: 10px;
+}
+
+.form-wraper:not(:first-child){
+	margin-top:40px ;
+}
+.form-wraper:last-child{
+	margin-top: 20px;
+}
+
+.conteiner-form form input[type=submit]{
+	background-color: #033C50;
+	color: white;
+	text-transform: uppercase;
+	width: 100%;
+	height: 45px;
+	font-size: 21px;
+	cursor: pointer;
+	border: 0;
+	border-radius: 10px;
+}
+ 
+/*estilizacao section-chamada*/
+section.chamada{
+	width: 100%;
+	text-align: center;
+	z-index: 1;
+}
+
+.chamada div.conteiner{
+	padding: 70px 0 50px 0;
+	background-color: #5268ab;
+}
+
+section.chamada h2{
+	width: 96%;
+	display: inline-block;
+	width: 100%;
+	color: white;
+	font-size: 21px;
+	font-weight: normal;
+	max-width: 700px;
+	margin-top: 15px;
+}
+section.chamada p{
+	width: 96%;
+	display: inline-block;
+	width: 100%;
+	color: white;
+	font-size: 17px;
+	font-weight: normal;
+	max-width: 700px;
+	margin-top: 15px;
+}
+
+/*estilizacao responsiva header*/
+@media screen and (max-width: 960px){
+	.conteiner-cover{
+		padding: 30px 0;
+		height: auto;
+		text-align: center;
+	}
+	.conteiner-form{
+		position: static;
+		height: auto;
+		display: inline-block;
+		width: 96%;
+		max-width: 400px;
+	}
+}
+
+/*estilizacao do mosaico*/
+
+.flexmosaico{
+	display: flex;
+}
+
+.item1-mosaico{
+	background-size: cover;
+	background-position: center;
+	width: 60%;
+}
+.item2-mosaico{
+	width: 40%;
+	padding:60px 40px;
+	background-color: grey;
+	color: white;
+}
+
+/*estilizacao mosaico responsivo*/
+
+@media screen and (max-width: 768px){
+	
+	.flexmosaico{
+		display: block;
+	}
+	.item1-mosaico{
+		height: 400px;
+		width: 100%;
+	}
+	.item2-mosaico{
+		width: 100%;
+	}
+}
+
+/*estilizacao footer*/
+
+footer{
+	text-align: center;
+	padding: 20px 0;
+}
+
+footer p{
+	margin-top: 10px;
+}
+
+
+
+
